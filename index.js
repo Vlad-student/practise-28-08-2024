@@ -24,7 +24,7 @@ isRunning = false
 
 function clearStopWatch (event){
 const h1 = event.target.parentElement.previousElementSibling;
-h1.textContent = '00:00:00'
+h1.textContent = '00:00:00';
 const startBtn = event.target.previousElementSibling;
 startBtn.textContent = 'start';
 isRunning = false;
