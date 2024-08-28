@@ -1,5 +1,6 @@
 const root = document.getElementById('root');
 
+const startTime = new Date(0,0,0,0,0,0)
 let isRunning = false;
 let countSecond = 0;
 let idInterval = 0;
@@ -12,7 +13,7 @@ if (isRunning === false) {
    startBtn.textContent = 'stop'; 
    idInterval = setInterval(()=>{
     countSecond++;
-    h1.textContent = startTime;
+    h1.textContent = new Date(new Date(0,0,0,0,0,0).setSeconds(countSecond)).toLocaleTimeString('en-GB');
 },1000);
 } else {
     clearInterval(idInterval)
