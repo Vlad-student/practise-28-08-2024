@@ -41,10 +41,12 @@ const div = document.createElement('div');
 
 const startBtn = document.createElement('button');
 startBtn.textContent ='start';
+startBtn.classList.add('startBtn');
 startBtn.addEventListener('click', startStopWatch)
 
 const clearBtn = document.createElement('button');
 clearBtn.textContent ='clear';
+clearBtn.classList.add('clearBtn')
 clearBtn.addEventListener('click', clearStopWatch)
 
 section.append(h1,div);
@@ -54,10 +56,4 @@ div.append(startBtn,clearBtn)
 
 root.append(renderStopWatch());
 
-
-// const startTime = new Date(0,0,0,0,0,0);
-// console.log(startTime.toLocaleDateString('en-GB'));
-// console.dir(new Date(startTime.serSeconds(360)).toLocaleDateString('en-GB'));
-
-// console.dir(startTime.setSeconds(1));
 
