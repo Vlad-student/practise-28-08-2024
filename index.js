@@ -37,6 +37,7 @@ const renderStopWatch = () => {
     section.classList.add('stopwatch')
     const h1 = document.createElement('h1');
 h1.textContent = '00:00:00'
+h1.classList.add('h1border')
 const div = document.createElement('div');
 
 const startBtn = document.createElement('button');
